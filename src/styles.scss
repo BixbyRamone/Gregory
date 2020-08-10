@@ -1,0 +1,218 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/font-awesome/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+// @import url('./base.css');
+// @import url('./basic-grid.css');
+
+$backdrop: #a2adbd;
+$backdroptest: #9dc2b1;
+$navtest: #c4e0d3;
+$sidefont: #fc036b;
+$navcolor: white;
+$sidebar: #4e5661;
+
+body {
+    background: $backdroptest;
+}
+
+nav {
+    // background: $navcolor;
+    // width: 100%;
+    background-image: linear-gradient(to right, $sidebar, $navtest 22%);
+    div {
+        color: black;
+    }
+}
+
+.tabs {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Lexend Zetta', 'sans-serif' !important;
+}
+
+.navbar {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+  ngb-carousel {
+      width: 100%;
+  }
+
+
+  .footer {
+    // position: relative;
+    width: 100%;
+    height: 250px;
+    background-color: $sidebar;
+    // background-image: linear-gradient(to right, $sidebar, $navtest 22%);
+  }
+
+  .nav-tab {
+    border-color: #fff;
+    justify-content: center;
+    cursor: pointer;
+    border-color: #fff;
+    border-radius: 5px 5px 0px 0px;
+    // padding-left: 20px;
+    // padding-right: 20px;
+    margin-bottom: -8px;
+  }
+
+  .nav-tab:hover {
+    background-color: #4a6e8a;
+    border: 3px !important;
+  }
+
+  .nav-tab-active {
+  font-style: bold;
+  font-size: larger;
+  background: $backdroptest !important;
+  color: #000 !important;
+  }
+
+    /* Expands swipeable area of page */
+    html, body {
+        min-height: 100%;
+        // padding-bottom: 50%;
+    }
+
+  // css Grid
+  .basic-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 7fr;
+}
+
+.main {
+    background: $backdroptest;
+}
+
+.sidebar {
+    background-image: linear-gradient(to right, $sidebar, $navtest);    
+    grid-template-rows: auto;
+    // background: $sidebar;
+    color: white;
+    height: 100%;
+}
+
+.footer {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-columns: 2fr 2fr 2fr;
+  .footer-col {
+    color: white;
+    padding-top: 20%;
+  }
+}
+
+.photo-grid {
+    display: grid;
+    gap: 1rem;
+  
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-auto-rows: 240px;
+  }
+
+  @keyframes cardEntrance {
+    from {
+      opacity: 0;
+      border-radius: 100%;
+      transform: scale(0.3);
+      transform: rotate(25deg);
+      filter: hue-rotate(180deg);
+    }
+    to {
+      opacity: 1;
+      border-radius: 10%;
+      transform: scale(1);
+      transform: rotate(0deg);
+      filter: hue-rotate(0deg);
+    }
+  }
+
+  .card-pic {
+    animation: cardEntrance 700ms ease-out;
+    border-radius: 10%;
+  }
+
+  .card {
+    // padding: 20px;
+    // margin-bottom: 20px;
+    // margin-right: 20px;
+    border-radius: 8%;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     animation: cardEntrance 350ms ease-out;
+  }
+  
+  /* Medium screens */
+  @media screen and (min-width: 600px) {
+    .card {
+      padding: 20px;
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+
+    .nav-tab {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .card-tall {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        grid-row: span 2 / auto;
+    }
+  
+    .card-wide {
+        background-size: cover;
+      grid-column: span 2 / auto;
+    }
+  }
+
+
+
+@media only screen and (max-width: 599px) {
+  .card {
+    padding: 20px;
+    margin: 20px;
+  }
+    .sidebar {
+        display: none;
+    }
+    .basic-grid {
+        display: inline;
+    }
+    .nav-tab {
+        margin-bottom: -9px;
+        padding-right: 0px;
+    }
+    .card-pic {
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 940px) and (min-width: 600px) {
+  .tabs {
+    padding-left: 25%;
+  }
+}
+
+@font-face {
+    font-family: 'Lexend Zetta';
+    src: url(https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap) format("truetype");
+    font-weight:300;
+  }
