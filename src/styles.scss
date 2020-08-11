@@ -1,6 +1,8 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../node_modules/font-awesome/css/font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Montserrat&family=Open+Sans&family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Felipa&display=swap');
 // @import url('./base.css');
 // @import url('./basic-grid.css');
 
@@ -27,10 +29,11 @@ nav {
 .tabs {
     text-align: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    // grid-template-columns: repeat(5, 1fr);
 }
 
 h1 {
+  // font-family: 'Felipa', cursive !important;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,11 +100,13 @@ h1 {
 }
 
 .sidebar {
+  font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(to right, $sidebar, $navtest);    
     grid-template-rows: auto;
     // background: $sidebar;
     color: white;
     height: 100%;
+    padding-right: 10px;
 }
 
 .footer {
@@ -146,6 +151,7 @@ h1 {
   }
 
   .card {
+    font-family: 'Roboto', sans-serif;
     // padding: 20px;
     // margin-bottom: 20px;
     // margin-right: 20px;
@@ -162,6 +168,12 @@ h1 {
       padding: 20px;
       margin-bottom: 20px;
       margin-right: 20px;
+    }
+    .tabs {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .hidden-tab {
+      display: none !important;
     }
 
     .nav-tab {
@@ -184,6 +196,10 @@ h1 {
 
 
 @media only screen and (max-width: 599px) {
+  .tabs { 
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
   .card {
     padding: 20px;
     margin: 20px;

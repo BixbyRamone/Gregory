@@ -24,5 +24,11 @@
     class="nav-tab">
     Info
     </div>
+    <div id="tab5"
+    [ngClass]="tabObjSel.tab5=='active' ? 'nav-tab-active' : ''"
+    (click)="clickATab($event)"
+    class="nav-tab hidden-tab">
+    Skills
+    </div>
   </div>
 </nav>

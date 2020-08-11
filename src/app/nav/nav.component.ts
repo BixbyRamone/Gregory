@@ -12,7 +12,8 @@ export class NavComponent implements OnInit {
     tab1: 'active',
     tab2: 'inactive',
     tab3: 'inactive',
-    tab4: 'inactive'
+    tab4: 'inactive',
+    tab5: 'inactive'
   };
   initiate = true;
 

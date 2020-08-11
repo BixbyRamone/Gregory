@@ -1,5 +1,6 @@
 @import url(c:\users\grego\projects\sass\SassTest-SPA\node_modules\bootstrap\dist\css\bootstrap.min.css);
 @import url(c:\users\grego\projects\sass\SassTest-SPA\node_modules\font-awesome\css\font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css2?family=Felipa&family=Montserrat&family=Open+Sans&family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap");
 body {
   background: #9dc2b1;
@@ -18,8 +19,6 @@ nav div {
   text-align: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
 }
 
 h1 {
@@ -96,12 +95,14 @@ html, body {
 }
 
 .sidebar {
+  font-family: 'Montserrat', sans-serif;
   background-image: -webkit-gradient(linear, left top, right top, from(#4e5661), to(#c4e0d3));
   background-image: linear-gradient(to right, #4e5661, #c4e0d3);
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   color: white;
   height: 100%;
+  padding-right: 10px;
 }
 
 .footer {
@@ -179,6 +180,7 @@ html, body {
 }
 
 .card {
+  font-family: 'Roboto', sans-serif;
   border-radius: 8%;
   background-size: cover;
   background-position: center;
@@ -193,6 +195,13 @@ html, body {
     padding: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
+  }
+  .tabs {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .hidden-tab {
+    display: none !important;
   }
   .nav-tab {
     padding-left: 20px;
@@ -211,6 +220,10 @@ html, body {
 }
 
 @media only screen and (max-width: 599px) {
+  .tabs {
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+  }
   .card {
     padding: 20px;
     margin: 20px;

@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   private swipeTime?: number;
   swiped: string;
   setTab: string;
-  navTabsArray = ['tab1', 'tab2', 'tab3', 'tab4'];
+  navTabsArray = ['tab1', 'tab2', 'tab3', 'tab4', 'tab5'];
   initiate = true;
 
   constructor(private tabsService: TabsService) { }
