@@ -97,6 +97,7 @@ h1 {
 
 .main {
     background: $backdroptest;
+    margin-bottom: 1rem;
 }
 
 .sidebar {
@@ -113,10 +114,21 @@ h1 {
   display: grid;
   gap: 1rem;
 
-  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr;
   .footer-col {
-    color: white;
-    padding-top: 20%;
+    color: $backdroptest;
+    padding-top: 20px;
+    ul {
+      list-style: none;
+      color: white;
+      line-height: 2;
+    }
+    a {
+      color: white;
+    }
+    h3 {
+      text-align: center;
+    }
   }
 }
 
@@ -133,15 +145,15 @@ h1 {
       opacity: 0;
       border-radius: 100%;
       transform: scale(0.3);
-      transform: rotate(25deg);
-      filter: hue-rotate(180deg);
+      // transform: rotate(25deg);
+      // filter: hue-rotate(180deg);
     }
     to {
       opacity: 1;
       border-radius: 10%;
       transform: scale(1);
-      transform: rotate(0deg);
-      filter: hue-rotate(0deg);
+      // transform: rotate(0deg);
+      // filter: hue-rotate(0deg);
     }
   }
 
@@ -192,8 +204,6 @@ h1 {
       grid-column: span 2 / auto;
     }
   }
-
-
 
 @media only screen and (max-width: 599px) {
   .tabs { 

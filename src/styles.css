@@ -92,6 +92,7 @@ html, body {
 
 .main {
   background: #9dc2b1;
+  margin-bottom: 1rem;
 }
 
 .sidebar {
@@ -109,13 +110,28 @@ html, body {
   display: -ms-grid;
   display: grid;
   gap: 1rem;
-  -ms-grid-columns: 2fr 2fr 2fr;
-      grid-template-columns: 2fr 2fr 2fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .footer .footer-col {
+  color: #9dc2b1;
+  padding-top: 20px;
+}
+
+.footer .footer-col ul {
+  padding-left: 40%;
+  list-style: none;
   color: white;
-  padding-top: 20%;
+  line-height: 2;
+}
+
+.footer .footer-col a {
+  color: white;
+}
+
+.footer .footer-col h3 {
+  text-align: center;
 }
 
 .photo-grid {
@@ -133,20 +149,12 @@ html, body {
     border-radius: 100%;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
   }
   to {
     opacity: 1;
     border-radius: 10%;
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
   }
 }
 
@@ -156,20 +164,12 @@ html, body {
     border-radius: 100%;
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
-    -webkit-transform: rotate(25deg);
-            transform: rotate(25deg);
-    -webkit-filter: hue-rotate(180deg);
-            filter: hue-rotate(180deg);
   }
   to {
     opacity: 1;
     border-radius: 10%;
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    -webkit-filter: hue-rotate(0deg);
-            filter: hue-rotate(0deg);
   }
 }
 
