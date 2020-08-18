@@ -75,6 +75,11 @@ h1 {
     border: 3px !important;
   }
 
+  .fa-angular {
+    font-size: 100px;
+    transform: scale(1.5,1);
+  }
+
   .nav-tab-active {
   font-style: bold;
   font-size: larger;
@@ -130,6 +135,10 @@ h1 {
       text-align: center;
     }
   }
+
+  .footer-col-find {
+    text-align: center;
+  }
 }
 
 .photo-grid {
@@ -165,7 +174,12 @@ h1 {
     }
   }
 
+  .link-i {
+    font-size: 50px;
+  }
+
   .card-pic {
+    cursor: pointer;
     animation: cardEntrance 700ms ease-out;
     border-radius: 10%;
     background-size: cover;
@@ -203,6 +217,15 @@ h1 {
     width: 100%;
   }
 
+  a {
+    color: $sidebar;
+    text-decoration: underline;
+  }
+
+  strong {
+    cursor: pointer;
+  }
+  
   .close {
     position: absolute;
     left: 90%;

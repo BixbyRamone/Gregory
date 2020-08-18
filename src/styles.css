@@ -70,6 +70,12 @@ ngb-carousel {
   border: 3px !important;
 }
 
+.fa-angular {
+  font-size: 100px;
+  -webkit-transform: scale(1.5, 1);
+          transform: scale(1.5, 1);
+}
+
 .nav-tab-active {
   font-style: bold;
   font-size: larger;
@@ -133,6 +139,10 @@ html, body {
   text-align: center;
 }
 
+.footer .footer-col-find {
+  text-align: center;
+}
+
 .photo-grid {
   display: -ms-grid;
   display: grid;
@@ -181,7 +191,12 @@ html, body {
   }
 }
 
+.link-i {
+  font-size: 50px;
+}
+
 .card-pic {
+  cursor: pointer;
   -webkit-animation: cardEntrance 700ms ease-out;
           animation: cardEntrance 700ms ease-out;
   border-radius: 10%;
@@ -212,6 +227,15 @@ html, body {
 
 img {
   width: 100%;
+}
+
+a {
+  color: #4e5661;
+  text-decoration: underline;
+}
+
+strong {
+  cursor: pointer;
 }
 
 .close {

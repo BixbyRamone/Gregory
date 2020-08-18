@@ -17,11 +17,11 @@ import { AlbumComponent } from './parts/molecules/album/album.component';
 import { ImageComponent } from './parts/atoms/image/image.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { FooterComponent } from './parts/molecules/footer/footer.component';
-import { InfoComponent } from './info/info.component';
+import { InfoComponent } from './parts/atoms/info/info.component';
 import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
-   declarations: [	
+   declarations: [
       AlbumComponent,
       AppComponent,
       CarouselComponent,
