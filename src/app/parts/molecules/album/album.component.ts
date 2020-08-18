@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TemplateRef } from '@angular/core';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-album',
@@ -27,9 +28,20 @@ export class AlbumComponent implements OnInit {
 
 
   cardTallClass = 'card-tall';
-  constructor() { }
+  modalRef: BsModalRef;
+  source: string;
+  content: string;
+
+  constructor(private modalService: BsModalService) { }
 
   ngOnInit() {
+  }
+
+  openModal(template: TemplateRef<any>, source: string, content: string) {
+    console.log(template);
+    this.source = source;
+    this.content = content;
+    this.modalRef = this.modalService.show(template);
   }
 
 }

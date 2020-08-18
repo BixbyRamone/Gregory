@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 
 import { AppComponent } from './app.component';
@@ -37,6 +38,7 @@ import { ContactComponent } from './contact/contact.component';
       BrowserAnimationsModule,
       BrowserModule,
       MatSidenavModule,
+      ModalModule.forRoot(),
       NgbModule,
       RouterModule.forRoot(appRoutes)
    ],
